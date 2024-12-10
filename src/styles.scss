@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+@use "./styles/material.scss" as mat;
+@use "./styles/color.scss" as color;
+@use "./styles/tailwind.scss" as tailwind;
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Source Code Pro, "Helvetica Neue", sans-serif;
+}

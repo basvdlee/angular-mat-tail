@@ -1,0 +1,18 @@
+@use "@angular/material" as mat;
+@include mat.core();
+
+$default-theme: mat.define-theme(
+  (
+    color: (
+      use-system-variables: true,
+    ),
+    typography: (
+      plain-family: "Source Code Pro",
+    ),
+  )
+);
+
+// todo no include all components
+:root {
+  @include mat.all-component-themes($default-theme);
+}
