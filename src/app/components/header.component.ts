@@ -13,7 +13,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <mat-toolbar class="flex justify-between">
-      <span>AngularTailwind</span>
+      <span>AngularMatTail</span>
       @if (darkMode()) {
       <mat-icon (click)="darkMode.set(!darkMode())">light_mode</mat-icon>
       } @else {
