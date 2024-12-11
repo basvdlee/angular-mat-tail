@@ -4,6 +4,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { Router } from '@angular/router';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -25,8 +26,10 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent {
   private router = inject(Router);
+  private auth = inject(AuthService);
 
   login() {
+    this.auth.login();
     this.router.navigate(['/dashboard']);
   }
 }
