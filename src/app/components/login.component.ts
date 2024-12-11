@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -8,7 +8,6 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-login',
   imports: [MatFormFieldModule, MatInputModule, MatButtonModule, FormsModule],
-  changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <form class="flex flex-col gap-4 max-w-xl mx-auto" (ngSubmit)="login()">
       <mat-form-field>
