@@ -1,6 +1,8 @@
 # AngularMatTail
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.4.
+Example app of angular + material + tailwindcss. Colors of material are shared with tailwindcss via css vars. You can create your own theme via [material-theme-builder/](https://material-foundation.github.io/material-theme-builder/) (Export as web and copy the css vars in [color.scss](/src/app/styles/color.scss)).
+
+Thank you [Zoaib Khan](https://www.youtube.com/@ZoaibKhan).
 
 ## Development server
 
