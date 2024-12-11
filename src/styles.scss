@@ -1,6 +1,6 @@
-@use "./styles/material.scss" as mat;
-@use "./styles/color.scss" as color;
-@use "./styles/tailwind.scss" as tailwind;
+@use "./app/styles/material.scss" as mat;
+@use "./app/styles/color.scss" as color;
+@use "./app/styles/tailwind.scss" as tailwind;
 
 html,
 body {
