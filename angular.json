@@ -10,7 +10,29 @@
           "style": "scss",
           "inlineStyle": true,
           "inlineTemplate": true,
-          "path": "src/app/components"
+          "path": "src/app/components",
+          "skipTests": true,
+          "flat": true
+        },
+        "@schematics/angular:directive": {
+          "skipTests": true,
+          "path": "src/app/directives",
+          "flat": true
+        },
+        "@schematics/angular:guard": {
+          "skipTests": true,
+          "path": "src/app/guards",
+          "flat": true
+        },
+        "@schematics/angular:pipe": {
+          "skipTests": true,
+          "path": "src/app/pipes",
+          "flat": true
+        },
+        "@schematics/angular:service": {
+          "skipTests": true,
+          "path": "src/app/services",
+          "flat": true
         }
       },
       "root": "",

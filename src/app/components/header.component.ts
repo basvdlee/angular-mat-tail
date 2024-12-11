@@ -1,13 +1,14 @@
 import { Component, effect, signal } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-header',
-  imports: [MatToolbarModule, MatIconModule],
+  imports: [MatToolbarModule, MatIconModule, RouterModule],
   template: `
     <mat-toolbar class="flex justify-between">
-      <span>AngularMatTail</span>
+      <a routerLink="/">AngularMatTail</a>
       @if (darkMode()) {
       <mat-icon (click)="darkMode.set(!darkMode())">light_mode</mat-icon>
       } @else {

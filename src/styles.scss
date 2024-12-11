@@ -1,13 +1,4 @@
 @use "./app/styles/material.scss" as mat;
 @use "./app/styles/color.scss" as color;
 @use "./app/styles/tailwind.scss" as tailwind;
-
-html,
-body {
-  height: 100%;
-}
-
-body {
-  margin: 0;
-  font-family: Source Code Pro, "Helvetica Neue", sans-serif;
-}
+@use "./app/styles/custom.scss" as custom;
